@@ -21,18 +21,24 @@ function check(){
 function plusNum() {
     if (check()) {
         res.value=Number(document.querySelector(".num1").value)+Number(document.querySelector(".num2").value)
+        document.querySelector(".num1").value=""
+        document.querySelector(".num2").value=""
     }
 }
 
 function minusNum() {
     if (check()) {
         res.value=Number(document.querySelector(".num1").value)-Number(document.querySelector(".num2").value)
+        document.querySelector(".num1").value=""
+        document.querySelector(".num2").value=""
     }
    
 }
 function multNum() {
     if (check()) {
         res.value=Number(document.querySelector(".num1").value)*Number(document.querySelector(".num2").value)
+        document.querySelector(".num1").value=""
+        document.querySelector(".num2").value=""
     }
    
 }
@@ -43,6 +49,8 @@ function divideNum() {
         }
         else{
         res.value=Number(document.querySelector(".num1").value)/Number(document.querySelector(".num2").value)
+        document.querySelector(".num1").value=""
+        document.querySelector(".num2").value=""
         }
     }
     
